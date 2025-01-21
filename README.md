@@ -1,5 +1,5 @@
 # ČSFD Ratebot
-*Skript, který ohodnotí daily cap (200) dílů seriálu random 3-5 hvězdičkami*
+*Skript, který ohodnotí určený počet dílů určeného seriálu random 3-5 hvězdičkami*
 
 ## Instalace
 1. Stáhněte si ```csfdBodiky.js``` z main
@@ -14,4 +14,5 @@
 2. Přihlašte se na svůj ČSFD profil
 3. ```node csfdBodiky.js```
 4. Zadejte stránku dílu na kterém chcete začít
-5. Frčte farmit bodíky
+5. Zadejte počet dílů které chcete ohodnotit
+6. Frčte farmit bodíky
