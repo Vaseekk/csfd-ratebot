@@ -6,6 +6,7 @@ const puppeteer = require('puppeteer');
     browserURL: 'http://localhost:9222', // URL pro vzdálené ladění
   });
 
+
   const page = await browser.newPage();
 
   // Vypíše ASCII art na začátku
@@ -28,17 +29,21 @@ by Vaseekk from baSET
 
   await page.goto(episodeUrl); 
 
-  for (let i = 0; i < repeatCount; i++) {
+  for (let i = 0; i <= repeatCount; i++) {
     try {
       // Kliknutí na tlačítko pro náhodný výběr hvězdiček
-      const hvezdicky = [60, 80, 100];
+      const hvezdicky = [60, 80, 100]; 
       const randomHvezda = hvezdicky[Math.floor(Math.random() * hvezdicky.length)];
       await page.waitForSelector(`.star.star-${randomHvezda}`, { timeout: 5000 });
       await page.click(`.star.star-${randomHvezda}`);
 
+      await sleep(700);
+
       // Kliknutí na šipku pro přechod na další stránku
       await page.waitForSelector('.next-episode', { timeout: 5000 });
       await page.click('.next-episode');
+
+      await sleep(700);
 
       console.log(`Dokončeno: ${i + 1}/${repeatCount}`);
     } catch (error) {
@@ -60,3 +65,7 @@ by Vaseekk from baSET
     });
   }
 })();
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
