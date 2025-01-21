@@ -11,6 +11,7 @@
 
 ## Spuštění
 1. ```"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222```
+**!Silně doporučuju si stahnout adblock!**
 2. Přihlašte se na svůj ČSFD profil
 3. ```node csfdRatebot.js```
 4. Zadejte stránku dílu na kterém chcete začít
