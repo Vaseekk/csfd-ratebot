@@ -6,8 +6,8 @@
 2. Dejte soubor do složky
 3. Nainstalujte NodeJS a Chrome pokud nemáte
 4. Ve složce spusťte příkazy: 
-    ```npm init -y```
-    ```npm i pupeteer```
+    * ```npm init -y```
+    * ```npm i puppeteer```
 
 ## Spuštění
 1. ```"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222```
