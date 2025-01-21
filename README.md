@@ -1,2 +1,2 @@
-# csfd-ratebot
-ČSFD Ratebot
+# ČSFD Ratebot
+
