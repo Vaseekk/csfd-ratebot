@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const { setTimeout } = require('timers/promises');
 
 (async () => {
   // Připojení k běžícímu prohlížeči
@@ -62,9 +63,15 @@ by Vaseekk from baSET
         await page.click(`.star.star-${randomHvezda}`);
       }
 
+      // Přidání náhodného zpoždění mezi 200-500 ms
+      await setTimeout(Math.floor(Math.random() * 300) + 300);
+
       // Kliknutí na šipku pro přechod na další stránku
       await page.waitForSelector('.next-episode', { timeout: 5000 });
       await page.click('.next-episode');
+
+      // Přidání náhodného zpoždění mezi 200-500 ms
+      await setTimeout(Math.floor(Math.random() * 300) + 300);
 
       console.log(`Dokončeno: ${i + 1}/${repeatCount}`);
     } catch (error) {
