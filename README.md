@@ -1,5 +1,5 @@
 # ČSFD Ratebot
-*Skript, který ohodnotí určený počet dílů určeného seriálu random 3-5 hvězdičkami*
+*Skript, který ohodnotí určený počet dílů určeného seriálu průmernými hvězdičkami*
 
 ## Instalace
 1. Stáhněte si ```csfdRatebot.js``` z main
