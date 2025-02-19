@@ -14,6 +14,6 @@
 * **!Silně doporučuju si stáhnout adblock!**
 2. Přihlašte se na svůj ČSFD profil
 3. ```node csfdRatebot.js```
-4. Zadejte stránku dílu na kterém chcete začít
+4. Zadejte URL dílu na kterém chcete začít
 5. Zadejte počet dílů které chcete ohodnotit
 6. Frčte farmit bodíky
